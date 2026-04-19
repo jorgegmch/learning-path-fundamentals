@@ -11,10 +11,10 @@ Este repositorio es mi **archivo histórico y técnico**. Aquí documento mi evo
 Para mantener la claridad en mi perfil profesional, he consolidado mis laboratorios de aprendizaje inicial en este espacio organizado por dominios:
 
 * **[Python Core](./python):** Implementación de lógica central, scripts de automatización y gestión de estados utilizando Python.
-* **[Web Foundations (HTML & CSS)](./):** Estructura y maquetación web, diseño responsivo y estilos avanzados.
-* **[JavaScript Logic](./):** Fundamentos del lenguaje, manipulación del DOM y lógica de programación asíncrona.
-* **[Database Management (MySQL)](./):** Diseño relacional, creación de esquemas, triggers, vistas y optimización de consultas.
-* **[AI & Code Validation ](./):** Investigación en redes neuronales aplicadas con Python y desarrollo de herramientas para la validación automática de código.
+* **[Web Foundations (HTML & CSS)](./html_css):** Estructura y maquetación web, diseño responsivo y estilos avanzados.
+* **[JavaScript Logic](./javascript):** Fundamentos del lenguaje, manipulación del DOM y lógica de programación asíncrona.
+* **[Database Management (MySQL)](./mysql):** Diseño relacional, creación de esquemas, triggers, vistas y optimización de consultas.
+* **[AI & Code Validation ](./applied_ai_research):** Investigación en redes neuronales aplicadas con Python y desarrollo de herramientas para la validación automática de código.
 
 ---
 
