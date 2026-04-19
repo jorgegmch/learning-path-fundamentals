@@ -1,3 +1,6 @@
+
+# ANALIZADOR DE DENSIDAD DE VOCALES
+
 import os
 
 while True:

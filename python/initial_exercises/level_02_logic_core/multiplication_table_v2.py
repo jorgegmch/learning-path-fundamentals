@@ -1,3 +1,6 @@
+
+# TABLA DE MULTIPLICAR (VERSIÓN 2)
+
 import os
 
 os.system("clear")

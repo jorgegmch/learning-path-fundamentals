@@ -1,3 +1,6 @@
+
+# SISTEMA DE INICIO DE SESIÓN / AUTENTICACIÓN
+
 import os
 
 menuLogin="""Bienvenido al programa de venta de productos

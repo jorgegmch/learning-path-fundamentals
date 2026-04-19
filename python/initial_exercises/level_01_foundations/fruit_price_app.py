@@ -1,3 +1,6 @@
+
+# SERVICIO SIMPLE DE PRECIOS ACTUALES DE LAS FRUTAS
+
 import os
 
 os.system ("clear")

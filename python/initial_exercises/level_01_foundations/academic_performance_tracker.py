@@ -1,3 +1,6 @@
+
+# CALCULADORA DE PROMEDIO ACADÉMICO BASADA EN 5 NOTAS
+
 import os
 
 os.system("clear")

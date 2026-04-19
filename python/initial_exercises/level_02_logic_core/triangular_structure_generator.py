@@ -1,3 +1,6 @@
+
+# GENERADOR DE TRIANGULOS DE ASTERISCOS (*)
+
 import os
 
 isActive=True
