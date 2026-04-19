@@ -11,8 +11,6 @@ Este repositorio es mi **archivo histórico y técnico**. Aquí documento mi evo
 Para mantener la claridad en mi perfil profesional, he consolidado mis laboratorios de aprendizaje inicial en este espacio organizado por dominios:
 
 * **[Python Core](./python):** Implementación de lógica central, scripts de automatización y gestión de estados utilizando Python.
-* **[Version Control (Git)](./):** Prácticas de control de versiones, flujo de ramas y gestión de repositorios.
-* **[Agile Methodology (Scrum)](./):** Aplicación de metodologías ágiles y gestión de proyectos bajo el marco de trabajo Scrum.
 * **[Web Foundations (HTML & CSS)](./):** Estructura y maquetación web, diseño responsivo y estilos avanzados.
 * **[JavaScript Logic](./):** Fundamentos del lenguaje, manipulación del DOM y lógica de programación asíncrona.
 * **[Database Management (MySQL)](./):** Diseño relacional, creación de esquemas, triggers, vistas y optimización de consultas.
