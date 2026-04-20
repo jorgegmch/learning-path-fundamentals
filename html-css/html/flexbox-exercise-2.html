@@ -1,0 +1,99 @@
+
+<!-- EJERCICIO DE FLEXBOX -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo FlexBox</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .item {
+            border: 1px solid rgb(20, 69, 69);
+            background-color: white;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            /* width: 120px;
+            height: 120px; */
+            line-height: 120px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .contenedor {
+            border: 1px solid black;
+            background-color: #ccc;
+            padding: 20px;
+
+
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+            width: 80%;
+            margin: 0 auto;
+            height: 600px;
+        }
+
+        .item:nth-child(1) {
+            background-color: lightblue;
+            order: 2;
+            flex-grow: 1;
+            flex-basis: 50%;
+        }
+
+        .item:nth-child(2) {
+            background-color: lightcoral;
+            order: 4;
+            flex-grow: 1;
+        }
+
+        .item:nth-child(3) {
+            background-color: lightgreen;
+            order: 1;
+            flex-grow: 1;
+        }
+
+        .item:nth-child(4) {
+            background-color: lightgoldenrodyellow;
+            order: 3;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo FlexBox</h1>
+    <hr>
+
+    <div class="contenedor">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+
+        <!-- <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div> -->
+
+        <!-- <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div> -->
+    </div>
+</body>
+</html>

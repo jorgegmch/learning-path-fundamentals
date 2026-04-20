@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: tomato;
+            }
+            h1 {
+                text-align: center;
+                text-transform: uppercase;
+            }
+            img {
+                width: 30%;
+                border-radius: 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                background-color: lightpink;
+            }
+            h1 {
+                text-align: right;
+                text-transform: capitalize;
+            }
+            img {
+                width: 60%;
+                border-radius: 30% 20% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo diseÃ±o responsivo</h1>
+    <br><br>
+    <div>
+        <img src="/img/sputnik-5.gif" alt="sputnik-5">
+    </div>
+</body>
+</html>
