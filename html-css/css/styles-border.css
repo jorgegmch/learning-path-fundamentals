@@ -1,0 +1,101 @@
+
+/* ESTILOS PARA EJERCICIO DE BORDES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: inherit;
+}
+
+.caja {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.caja1 {
+    border-top:    4px solid  #3C3489;  /* sólido */
+    border-right:  4px dashed #0F6E56;  /* guiones */
+    border-bottom: 4px dotted #993C1D;  /* puntos */
+    border-left:   4px double #993556;  /* doble */
+    border-radius: 8px;
+    background-color: #EEEDFE;
+    color: #3C3489;
+}
+
+.caja2 {
+    border: 3px ridge #185FA5;
+    border-radius: 16px;
+    background-color: #E6F1FB;
+    color: #0C447C;
+    outline: 3px dashed #378ADD;
+    outline-offset: 6px;
+}
+
+.caja3 {
+    border: 2px solid #5F5E5A;
+    background-color: #F1EFE8;
+    padding: 1rem;
+}
+
+.caja-exterior {
+    border: 4px groove #888780;
+    border-radius: 8px;
+    background-color: #D3D1C7;
+    padding: 1rem;
+}
+
+.caja-interior {
+    border: 3px inset #444441;
+    border-radius: 4px;
+    background-color: #F1EFE8;
+    padding: 1rem;
+    color: #2C2C2A;
+}
+
+.caja4 {
+    border: 2px solid #639922;
+    background-color: #EAF3DE;
+    padding: 0.75rem;
+}
+
+.nivel-uno {
+    border: 2px solid #3B6D11;
+    border-radius: 4px;
+    background-color: #C0DD97;
+    padding: 0.75rem;
+}
+
+.nivel-dos {
+    border: 2px solid #27500A;
+    border-radius: 4px;
+    background-color: #97C459;
+    padding: 0.75rem;
+}
+
+.nivel-tres {
+    border: 2px solid #173404;
+    border-radius: 4px;
+    background-color: #639922;
+    padding: 0.75rem;
+    text-align: center;
+    color: #EAF3DE;
+    font-weight: bold;
+}
