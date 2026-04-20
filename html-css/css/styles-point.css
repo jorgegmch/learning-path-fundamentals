@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin: 100px;
+    width: 700px;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+#cuadrado {
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    position: relative;
+    top: 2%;
+    left: 30%;
+}
+
+#punto {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    bottom: 20%;
+    left: 50%;
+}

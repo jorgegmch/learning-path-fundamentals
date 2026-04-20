@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.contenedor {
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #999;
+    box-shadow: 3px 3px 5px #aaa;
+    text-align: left;
+}
+
+.bloque {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.barra {
+    height: 30px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.negro {
+    background-color: black;
+    border-color: black;
+}
+
+.gris {
+    background-color: gray;
+    border-color: gray;
+}
+
+.rojo {
+    background-color: red;
+    border-color: red;
+}
+
+.escala div {
+    height: 10px;
+}
+
+.escala {
+    width: 100%;
+    height: 120px; /* más alto que antes */
+    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, 
+        #ffe6f2 0%,   /* Rosa muy claro (casi blanco) */
+        #ffb3d9 25%,  /* Rosa suave */
+        #ff80bf 50%,  /* Rosa medio */
+        #ff4da6 75%,  /* Rosa intenso */
+        #ff1a8c 100%  /* Rosa fuerte al final */
+    );
+}

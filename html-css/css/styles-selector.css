@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    border: 2px solid #ff9900;
+    margin: 20px;
+    padding: 10px;
+}
+
+#titulo {
+    color: #009999;
+}
+
+#subtitulo {
+    color: #0000ff;
+}
+
+strong {
+    color: #cc0000;
+}
+
+.destacado {
+    color: #ff9900;
+}
+
+.especial {
+    color: #9900cc;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+em {
+    color: #0000ff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    color: #009933;
+}
+
+caption {
+    color: #0000ff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead th.especial,
+tbody th.especial {
+    color: #ff9900;
+}
+
+thead th {
+    color: #cc0000;
+}
+
+tbody tr td em {
+    color: #009933;
+}
+
+tbody tr + tr th {
+    color: #cc0000;
+}
+
+tbody tr + tr td strong {
+    color: #ff9900;
+}
+
+tfoot th {
+    color: #cc0000;
+}
+
+#adicional p {
+    color: #5d7e03;
+}
+
+#adicional #especial {
+    color: #f01097;
+}
+
+#adicional a {
+    color: #009933;
+    text-decoration: underline;
+}
