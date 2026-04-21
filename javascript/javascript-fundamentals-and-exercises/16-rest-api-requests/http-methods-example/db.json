@@ -1,0 +1,21 @@
+{
+  "campers": [
+    {
+      "id": 1,
+      "nombre": "Carlos García",
+      "edad": 25,
+      "sexo": "masculino",
+      "modulos": [
+        { "id": 1, "nombre": "Java Fundamentals", "puntaje": 85 },
+        { "id": 2, "nombre": "Spring Boot", "puntaje": 90 }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "María López",
+      "edad": 23,
+      "sexo": "femenino",
+      "modulos": [{ "id": 1, "nombre": "Java Fundamentals", "puntaje": 92 }]
+    }
+  ]
+}

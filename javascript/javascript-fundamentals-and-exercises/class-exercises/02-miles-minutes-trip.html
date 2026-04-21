@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje</title>
+</head>
+<body>
+    <h1>Cálculadora de viaje</h1>
+    <hr>
+    <p>
+        <b>Distancia a recorrer:</b>
+        <span id="distancia"></span>
+    </p>
+    <p>
+        <b>Tiempo utilizado:</b>
+        <span id="tiempo"></span>
+    </p>
+
+    <script>
+        let distancia = Number(prompt("Distancia a recorrer:"));
+        let tiempo = distancia * 60 / 40;
+
+        document.getElementById("distancia").innerHTML = `<em>${distancia} [mil]</em>`;
+        document.getElementById("tiempo").innerHTML = `<em>${tiempo} [min]</em>`;
+    </script>
+</body>
+</html>

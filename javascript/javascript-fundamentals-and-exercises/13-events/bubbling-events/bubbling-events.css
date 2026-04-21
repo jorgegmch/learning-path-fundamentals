@@ -1,0 +1,26 @@
+body {
+    background-color: wheat;
+}
+
+div {
+    background-color: burlywood;
+    width: 60%;
+    height: 100px;
+    text-align: center;
+}
+
+span {
+    background-color: chocolate;
+    padding: 20px;
+    margin: 10px auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+i {
+    background-color: coral;
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+}

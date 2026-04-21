@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo FormData</title>
+    <style>
+    img {
+        width: 15%;
+    }
+    </style>
+</head>
+<body>
+    <h1>FormData</h1>
+    <hr />
+
+    <form id="miform">
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" />
+    <br /><br />
+
+    <label for="apellido">Apellidos: </label>
+    <input type="text" name="apellido" id="apellido" />
+    <br /><br />
+
+    <label for="edad">Edad: </label>
+    <input type="number" name="edad" id="edad" />
+    <br /><br />
+
+    <label for="ocupacion">Ocupación: </label>
+    <input type="text" name="ocupacion" id="ocupacion" />
+    <br /><br />
+
+    <label for="sexo">Sexo:</label>
+    <br />
+    <label for="masculino">
+        <input type="radio" name="sexo" id="sexom" value="masculino" />
+        Masculino
+    </label>
+    <br />
+    <label for="femenino">
+        <input type="radio" name="sexo" id="sexof" value="femenino" />
+        Femenino
+    </label>
+    <br />
+    <label for="otro">
+        <input type="radio" name="sexo" id="sexoo" value="otro" />
+        Otro
+    </label>
+    <br /><br />
+
+    <button type="button" onclick="enviarFormulario()">Enviar</button>
+    <hr />
+
+    <div id="resultado">
+        <table border="1" width="75%" id="tblcamper">
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Ocupación</th>
+            <th>Sexo</th>
+        </tr>
+        <!-- <tr>
+            <td>Diomedes</td>
+            <td>Diaz</td>
+            <td>60</td>
+            <td>Cantante</td>
+            <td align="center">
+            <img src="/05-formdata/img/male.png" alt="hombre" style="width: 20%" />
+            </td>
+        </tr> -->
+        </table>
+    </div>
+    </form>
+
+    <script>
+    function enviarFormulario() {
+        const form = document.getElementById("miform");
+        const resultado = document.getElementById("resultado");
+        const datos = new FormData(form);
+        const tblCamper = document.getElementById("tblcamper");
+
+        for (let [key, value] of datos.entries()) {
+        console.log(`${key} : ${value}`);
+        }
+
+        // let tabla = encabezadoTabla();
+        let tabla = cuerpoTabla(datos);
+        // tabla += pieTabla();
+
+        tblCamper.innerHTML += tabla;
+    }
+
+    function encabezadoTabla() {
+        return `<table border="1" width="75%">
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Ocupación</th>
+            <th>Sexo</th>
+        </tr>`;
+    }
+
+    function pieTabla() {
+        return "</table>";
+    }
+
+    function cuerpoTabla(datos) {
+        const nombre = datos.get("nombre");
+        const apell = datos.get("apellido");
+        const edad = datos.get("edad");
+        const ocupa = datos.get("ocupacion");
+        const sexo = datos.get("sexo").charAt(0).toUpperCase();
+        const imagen =
+        sexo === "M" ? "/05-formdata/img/male.png" : sexo === "F" ? "/05-formdata/img/female.png" : "/05-formdata/img/otro.png";
+        return `<tr>
+            <td>${nombre}</td>
+            <td>${apell}</td>
+            <td>${edad}</td>
+            <td>${ocupa}</td>
+            <td align="center">
+            <img src="${imagen}" alt="sexo" style=" width:"20%" />
+            </td>
+        </tr>`;
+    }
+    </script>
+</body>
+</html>
