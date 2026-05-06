@@ -1,4 +1,4 @@
-package encapsulamiento.valladolid.ejercicio.racionales;
+package poo.encapsulamiento.valladolid.ejercicio.racionales;
 
 public class Racional {
     // Q: p/q donde p, q e Z

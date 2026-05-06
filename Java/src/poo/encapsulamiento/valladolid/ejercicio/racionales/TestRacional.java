@@ -1,4 +1,4 @@
-package encapsulamiento.valladolid.ejercicio.racionales;
+package poo.encapsulamiento.valladolid.ejercicio.racionales;
 
 public class TestRacional {
     public static void main(String[] args) {

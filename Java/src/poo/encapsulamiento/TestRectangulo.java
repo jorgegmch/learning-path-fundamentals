@@ -1,4 +1,4 @@
-package encapsulamiento;
+package poo.encapsulamiento;
 
 public class TestRectangulo {
     public static void main(String[] args) {
