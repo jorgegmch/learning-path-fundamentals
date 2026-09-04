@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Boot // Arranca tu futuro como developer</title>
+<meta name="description" content="Aprende Spring Boot: el framework Java que impulsa microservicios en producción en miles de empresas. Convención sobre configuración, servidor embebido, listo para producción.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__leaf" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26">
+          <path d="M20.5 3.5c-4 0-14 1-16 9-1 4 .5 7.5 3 9.5 0 0 .3-2.5 2-5 2.2-3.2 6-5 11-6-4 1.5-7 3.5-9 6.5-1 1.5-1.5 3-1.5 3s7 .5 10.5-5c3-5 .5-11.5 0-12Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="nav__name">spring<strong>boot</strong></span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#por-que">¿Por qué?</a>
+      <a href="#codigo">Código</a>
+      <a href="#ruta">Ruta</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener" class="nav__cta">Docs oficiales</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> JAVA · MICROSERVICIOS · PRODUCCIÓN</p>
+      <h1 class="hero__title" data-glitch="Arranca en modo boot.">Arranca en<br><span class="hero__accent">modo boot.</span></h1>
+      <p class="hero__sub">
+        Spring Boot elimina la configuración interminable de Java empresarial
+        y te deja escribir la lógica que importa. Servidor embebido, cero XML,
+        y un <code>main()</code> que te lleva de cero a API en producción en minutos.
+      </p>
+      <div class="hero__actions">
+        <a href="#ruta" class="btn btn--primary">
+          <span>Empezar mi ruta</span>
+          <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h11M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#codigo" class="btn btn--ghost">Ver código real</a>
+      </div>
+    </div>
+
+    <div class="hero__terminal" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--r"></span>
+          <span class="terminal__dot terminal__dot--y"></span>
+          <span class="terminal__dot terminal__dot--g"></span>
+          <span class="terminal__title">mvn spring-boot:run</span>
+        </div>
+        <pre class="terminal__body"><code id="bootLog"></code><span class="cursor">▌</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POR QUÉ ============ -->
+  <section class="section" id="por-que">
+    <div class="section__head">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> EL FRAMEWORK</p>
+      <h2 class="section__title">Menos boilerplate. Más producto.</h2>
+      <p class="section__sub">Spring Boot no reemplaza a Spring: lo hace instantáneo. Esto es lo que cambia cuando lo usas.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-card__icon">⚙</div>
+        <h3>Convención sobre configuración</h3>
+        <p>Auto-configuración inteligente que detecta tus dependencias y arma el contexto de Spring por ti. Sin <code>web.xml</code>, sin ceremonias.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon">◈</div>
+        <h3>Servidor embebido</h3>
+        <p>Tomcat, Jetty o Undertow viven dentro de tu JAR. Un solo artefacto ejecutable: <code>java -jar app.jar</code> y ya está corriendo.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon">◉</div>
+        <h3>Listo para producción</h3>
+        <p>Spring Boot Actuator te da métricas, health checks y observabilidad desde el primer día, sin librerías extra que integrar.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon">◇</div>
+        <h3>Ecosistema Spring completo</h3>
+        <p>Spring Data, Spring Security, Spring Cloud. Todo el ecosistema encaja con starters diseñados para trabajar juntos.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon">▣</div>
+        <h3>Hecho para microservicios</h3>
+        <p>Arranque en segundos, footprint controlado y soporte nativo para contenedores. Empaquetas, despliegas, escalas.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-card__icon">◎</div>
+        <h3>Comunidad e industria real</h3>
+        <p>Es el estándar de facto para backend Java en empresas de todos los tamaños. Lo que aprendes hoy se usa en producción mañana.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CÓDIGO ============ -->
+  <section class="section section--code" id="codigo">
+    <div class="section__head">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> DE CERO A API</p>
+      <h2 class="section__title">Esto es todo lo que necesitas.</h2>
+      <p class="section__sub">Un controlador REST funcional, completo, en menos de 15 líneas.</p>
+    </div>
+
+    <div class="code-window">
+      <div class="code-window__bar">
+        <span class="terminal__dot terminal__dot--r"></span>
+        <span class="terminal__dot terminal__dot--y"></span>
+        <span class="terminal__dot terminal__dot--g"></span>
+        <span class="terminal__title">HelloController.java</span>
+      </div>
+      <pre class="code-window__body"><code><span class="tok-kw">import</span> org.springframework.web.bind.annotation.*;
+
+<span class="tok-ann">@RestController</span>
+<span class="tok-kw">public</span> <span class="tok-kw">class</span> <span class="tok-cls">HelloController</span> {
+
+    <span class="tok-ann">@GetMapping</span>(<span class="tok-str">"/api/status"</span>)
+    <span class="tok-kw">public</span> String <span class="tok-fn">status</span>() {
+        <span class="tok-kw">return</span> <span class="tok-str">"El servidor está en línea."</span>;
+    }
+}</code></pre>
+    </div>
+
+    <p class="code-note">Corre esto y tienes un endpoint HTTP real, sin servidor externo que instalar ni configurar.</p>
+  </section>
+
+  <!-- ============ RUTA ============ -->
+  <section class="section" id="ruta">
+    <div class="section__head">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> TU RUTA DE APRENDIZAJE</p>
+      <h2 class="section__title">El camino ya está trazado.</h2>
+      <p class="section__sub">No necesitas dominar todo Java empresarial primero. Esta es la secuencia que funciona.</p>
+    </div>
+
+    <ol class="roadmap">
+      <li class="roadmap__item">
+        <span class="roadmap__num">01</span>
+        <div>
+          <h3>Java sólido</h3>
+          <p>POO, colecciones, streams y manejo de excepciones. La base que sostiene todo lo demás.</p>
+        </div>
+      </li>
+      <li class="roadmap__item">
+        <span class="roadmap__num">02</span>
+        <div>
+          <h3>Fundamentos de Spring</h3>
+          <p>Inyección de dependencias, contenedor IoC y beans. Entiende el "por qué" antes del "cómo".</p>
+        </div>
+      </li>
+      <li class="roadmap__item">
+        <span class="roadmap__num">03</span>
+        <div>
+          <h3>Spring Boot + REST</h3>
+          <p>Controladores, servicios, repositorios. Tu primera API corriendo de verdad.</p>
+        </div>
+      </li>
+      <li class="roadmap__item">
+        <span class="roadmap__num">04</span>
+        <div>
+          <h3>Persistencia con Spring Data JPA</h3>
+          <p>Conecta tu API a una base de datos real sin escribir SQL repetitivo.</p>
+        </div>
+      </li>
+      <li class="roadmap__item">
+        <span class="roadmap__num">05</span>
+        <div>
+          <h3>Seguridad y microservicios</h3>
+          <p>Spring Security, autenticación y los patrones de Spring Cloud para sistemas distribuidos.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="cta-inline">
+      <a href="https://spring.io/guides" target="_blank" rel="noopener" class="btn btn--primary">
+        <span>Ver guías oficiales</span>
+        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h11M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ COMUNIDAD / STATS ============ -->
+  <section class="stats" id="comunidad">
+    <div class="stats__grid">
+      <div class="stat">
+        <span class="stat__value" data-count="60">0</span><span class="stat__unit">%+</span>
+        <p>de los backends Java empresariales corren sobre Spring</p>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-count="15">0</span><span class="stat__unit">+</span>
+        <p>años de evolución continua del ecosistema Spring</p>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-count="1">0</span><span class="stat__unit">JAR</span>
+        <p>artefacto ejecutable, sin dependencias externas que instalar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="final-cta">
+    <div class="final-cta__box">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> SIGUIENTE PASO</p>
+      <h2>Tu primer <code>@SpringBootApplication</code> te espera.</h2>
+      <p>No hace falta esperar el momento perfecto. Con Java y quince minutos ya puedes tener algo corriendo.</p>
+      <div class="hero__actions hero__actions--center">
+        <a href="https://start.spring.io" target="_blank" rel="noopener" class="btn btn--primary">
+          <span>Generar proyecto en Spring Initializr</span>
+          <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h11M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>spring<strong>boot</strong> // guía no oficial para aprender el framework</span>
+    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">spring.io/projects/spring-boot ↗</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
