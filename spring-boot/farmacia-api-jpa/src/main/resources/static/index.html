@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia · Panel de gestión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="topbar__brand">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+                <h1>Farmacia</h1>
+                <p>Panel de gestión de inventario</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="layout">
+
+        <section class="panel" aria-labelledby="titulo-categoria">
+            <h2 id="titulo-categoria"><span class="cross cross--sm"></span> Categoría</h2>
+            <form id="form-categoria" class="form">
+                <label for="categoria-nombre">Nombre</label>
+                <input type="text" id="categoria-nombre" placeholder="Analgésicos" required>
+                <button type="submit">Registrar categoría</button>
+            </form>
+            <p class="feedback" id="feedback-categoria"></p>
+        </section>
+
+        <section class="panel" aria-labelledby="titulo-proveedor">
+            <h2 id="titulo-proveedor"><span class="cross cross--sm"></span> Proveedor</h2>
+            <form id="form-proveedor" class="form">
+                <label for="proveedor-nombre">Nombre</label>
+                <input type="text" id="proveedor-nombre" placeholder="Laboratorios Andinos" required>
+                <label for="proveedor-nit">NIT</label>
+                <input type="text" id="proveedor-nit" placeholder="900456789" required>
+                <button type="submit">Registrar proveedor</button>
+            </form>
+            <p class="feedback" id="feedback-proveedor"></p>
+        </section>
+
+        <section class="panel" aria-labelledby="titulo-medicamento">
+            <h2 id="titulo-medicamento"><span class="cross cross--sm"></span> Medicamento</h2>
+            <form id="form-medicamento" class="form">
+                <label for="medicamento-nombre">Nombre</label>
+                <input type="text" id="medicamento-nombre" placeholder="Acetaminofén 500 mg" required>
+                <label for="medicamento-precio">Precio</label>
+                <input type="number" id="medicamento-precio" step="0.01" min="0" placeholder="8500" required>
+                <label for="medicamento-stock">Stock</label>
+                <input type="number" id="medicamento-stock" min="0" placeholder="100" required>
+                <button type="submit">Registrar medicamento</button>
+            </form>
+            <p class="feedback" id="feedback-medicamento"></p>
+        </section>
+
+        <section class="panel panel--wide" aria-labelledby="titulo-asociar">
+            <h2 id="titulo-asociar"><span class="cross cross--sm"></span> Asociar relaciones</h2>
+            <div class="form-row">
+                <form id="form-asignar-categoria" class="form form--inline">
+                    <label for="ac-id-medicamento">ID medicamento</label>
+                    <input type="number" id="ac-id-medicamento" min="1" required>
+                    <label for="ac-id-categoria">ID categoría</label>
+                    <input type="number" id="ac-id-categoria" min="1" required>
+                    <button type="submit">Asignar categoría</button>
+                </form>
+                <form id="form-asignar-proveedor" class="form form--inline">
+                    <label for="ap-id-medicamento">ID medicamento</label>
+                    <input type="number" id="ap-id-medicamento" min="1" required>
+                    <label for="ap-id-proveedor">ID proveedor</label>
+                    <input type="number" id="ap-id-proveedor" min="1" required>
+                    <button type="submit">Asignar proveedor</button>
+                </form>
+            </div>
+            <p class="feedback" id="feedback-asociar"></p>
+        </section>
+
+        <section class="panel panel--wide" aria-labelledby="titulo-inventario">
+            <div class="panel__header">
+                <h2 id="titulo-inventario"><span class="cross cross--sm"></span> Inventario</h2>
+                <div class="filtro">
+                    <label for="filtro-categoria">Filtrar por ID de categoría</label>
+                    <input type="number" id="filtro-categoria" min="1" placeholder="Ej: 1">
+                    <button id="btn-filtrar" type="button">Filtrar</button>
+                    <button id="btn-ver-todos" type="button" class="btn-secundario">Ver todos</button>
+                </div>
+            </div>
+
+            <div class="tabla-wrap">
+                <table id="tabla-medicamentos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Categoría</th>
+                            <th>Proveedores</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-medicamentos-body">
+                    </tbody>
+                </table>
+                <p class="tabla-vacia" id="tabla-vacia" hidden>Sin medicamentos para mostrar todavía.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
