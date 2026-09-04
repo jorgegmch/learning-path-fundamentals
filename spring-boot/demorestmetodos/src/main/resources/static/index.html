@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Tienda - Artículos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <h1 class="logo">Mi<span>Tienda</span></h1>
+    </div>
+    <div class="header-buscar">
+        <input type="number" id="input-buscar-id" class="input-buscar" placeholder="Buscar artículo por ID" min="1">
+        <button id="boton-buscar" class="boton-buscar" type="button">Buscar</button>
+    </div>
+</header>
+
+<main class="contenedor">
+
+    <div id="mensaje-alerta" class="alerta" style="display:none;"></div>
+
+    <section id="resultado-busqueda" class="resultado-busqueda" style="display:none;">
+        <div class="resultado-busqueda-cabecera">
+            <h2>Resultado de la búsqueda</h2>
+            <button id="boton-cerrar-busqueda" class="boton-cerrar" type="button" aria-label="Cerrar resultado">&times;</button>
+        </div>
+        <div id="resultado-busqueda-contenido"></div>
+    </section>
+
+    <section class="seccion-lista">
+        <div class="seccion-titulo">
+            <h2>Artículos</h2>
+            <span id="contador-articulos" class="contador"></span>
+        </div>
+
+        <p id="mensaje-cargando" class="mensaje-cargando">Cargando artículos...</p>
+
+        <div id="lista-articulos" class="lista-articulos"></div>
+    </section>
+
+</main>
+
+<button id="boton-abrir-formulario" class="fab" type="button" aria-label="Agregar artículo">+</button>
+
+<div id="fondo-formulario" class="fondo-formulario"></div>
+
+<section id="panel-formulario" class="panel-formulario">
+    <div class="panel-formulario-cabecera">
+        <h2 id="titulo-formulario">Nuevo artículo</h2>
+        <button id="boton-cerrar-formulario" class="boton-cerrar" type="button" aria-label="Cerrar formulario">&times;</button>
+    </div>
+
+    <form id="formulario-articulo" class="formulario">
+        <label class="etiqueta" for="input-id">ID del artículo</label>
+        <input class="campo" type="number" id="input-id" min="1" required>
+
+        <label class="etiqueta" for="input-nombre">Nombre</label>
+        <input class="campo" type="text" id="input-nombre" maxlength="100" required>
+
+        <label class="etiqueta" for="input-valor">Valor</label>
+        <input class="campo" type="number" id="input-valor" min="0" step="0.01" required>
+
+        <div class="panel-formulario-botones">
+            <button type="button" id="boton-cancelar" class="boton boton-secundario" style="display:none;">Cancelar</button>
+            <button type="submit" id="boton-guardar" class="boton boton-primario">Guardar</button>
+        </div>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
