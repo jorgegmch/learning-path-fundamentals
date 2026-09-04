@@ -2,7 +2,7 @@
 
 > "Architecture starts where the fundamentals become second nature."
 
-Este repositorio es mi **archivo histórico y técnico**. Aquí documento mi evolución desde los primeros algoritmos lógicos hasta la comprensión profunda de las bases necesarias para construir software robusto, limpio y escalable. 
+Este repositorio es mi **archivo histórico y técnico**. Aquí documento mi evolución desde los primeros algoritmos lógicos hasta la comprensión profunda de las bases necesarias para construir software robusto, limpio y escalable.
 
 ---
 
@@ -13,28 +13,34 @@ Para mantener la claridad en mi perfil profesional, he consolidado mis laborator
 * **[Python Core](./python):** Implementación de lógica central, scripts de automatización y gestión de estados utilizando Python.
 * **[Web Foundations (HTML & CSS)](./html-css):** Estructura y maquetación web, diseño responsivo y estilos avanzados.
 * **[JavaScript Logic](./javascript):** Fundamentos del lenguaje, manipulación del DOM y lógica de programación asíncrona.
-* **[Database Management (MySQL)](./mysql):** Diseño relacional, creación de esquemas, triggers, vistas y optimización de consultas.
-* **[AI & Code Validation ](./applied_ai_research):** Investigación en redes neuronales aplicadas con Python y desarrollo de herramientas para la validación automática de código.
+* **[Java Core](./Java):** Fundamentos del lenguaje: ciclos, operadores, cadenas, POO y manejo de archivos con I/O.
+* **[Spring Boot](./spring-boot):** Desarrollo de APIs REST, integración con bases de datos mediante Spring Data JPA, relaciones entre entidades y seguridad básica con Spring Security.
+* **[Database Management (MySQL)](./mysql):** Diseño relacional, creación de esquemas, triggers, vistas, procedimientos almacenados y optimización de consultas.
+* **[AI & Code Validation](./applied_ai_research):** Redes neuronales aplicadas con TensorFlow/Keras, sistemas expertos híbridos con LLMs y herramientas de validación automática de código.
 
 ---
 
 ### 🛠️ Stack Tecnológico de Base
 
 Para estos ejercicios de fundamentación, utilicé:
-- **Lenguajes:** Python, JavaScript, SQL.
-- **Tecnologías Web**: HTML5 & CSS3.
-- **Gestión de Datos**: MySQL.
-- **IA & Automatización**: Python AI Libraries.
-- **Control de Versiones:** Git & GitHub (aplicando GitFlow básico).
+- **Lenguajes:** Python, JavaScript, Java, SQL.
+- **Tecnologías Web:** HTML5 & CSS3.
+- **Frameworks:** Spring Boot, Spring Data JPA, Spring Security.
+- **Gestión de Datos:** MySQL, PostgreSQL.
+- **IA & Automatización:** TensorFlow, Keras, Python AI Libraries.
+- **Control de Versiones:** Git & GitHub (aplicando Conventional Commits).
 
 ---
 
 ### 📈 Mi Evolución
-Este repositorio es el punto de partida hacia mis proyectos actuales de alta complejidad. 
+
+Este repositorio es el punto de partida hacia mis proyectos actuales de alta complejidad.
 Actualmente, **mi enfoque se ha desplazado hacia**:
-* Desarrollo de sistemas empresariales como ERPs y CRMs.
-* Desarrollo aumentado por IA (AI-Augmented Development).
-* Sistemas seguros desde la concepción (Cybersecurity path).
+
+* **Desarrollo de sistemas empresariales** como ERPs y CRMs con arquitecturas limpias y escalables.
+* **AI-Augmented Development:** desarrollo con agentes de IA como compañeros activos del proceso — desde la generación de código hasta la revisión arquitectónica, integrando herramientas como Claude, Cursor y GitHub Copilot en el flujo de trabajo real.
+* **Comunicación aplicada al software:** mi formación como Comunicador Social me permite diseñar interfaces, flujos y mensajes que persuaden, guían y retienen al usuario — no solo sistemas que funcionan, sino sistemas que convencen.
+* **Sistemas seguros desde la concepción** (Cybersecurity path).
 
 ---
 
