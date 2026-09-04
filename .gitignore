@@ -15,6 +15,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Spring Boot properties - only .example files allowed
+spring-boot/**/*.properties
+!spring-boot/**/*.example.properties
+
 # ===========================
 # GRADLE
 # ===========================
