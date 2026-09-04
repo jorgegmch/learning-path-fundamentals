@@ -1,0 +1,89 @@
+# ===========================
+# JAVA
+# ===========================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# ===========================
+# SPRING BOOT / MAVEN
+# ===========================
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===========================
+# GRADLE
+# ===========================
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ===========================
+# INTELLIJ IDEA
+# ===========================
+.idea/
+*.iml
+*.iws
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# ===========================
+# ECLIPSE
+# ===========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# ===========================
+# NETBEANS
+# ===========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===========================
+# VS CODE
+# ===========================
+.vscode/
+
+# ===========================
+# PYTHON
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+.ipynb_checkpoints/
+
+# ===========================
+# NODE / JAVASCRIPT
+# ===========================
+node_modules/
+.npm
+*.log
+
+# ===========================
+# SISTEMAS OPERATIVOS
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
