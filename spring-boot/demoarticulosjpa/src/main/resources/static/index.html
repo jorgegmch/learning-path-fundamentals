@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos — MercadoArtículos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo" aria-label="MercadoArtículos, volver al inicio">Mercado<span>Artículos</span></a>
+            <div class="search-box">
+                <input type="text" id="buscarInput" placeholder="Buscar artículo por ID…" aria-label="Buscar artículo por ID">
+                <button id="btnBuscar" class="btn-search" aria-label="Buscar">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section" aria-labelledby="formTitle">
+            <h2 id="formTitle">Nuevo artículo</h2>
+            <form id="articuloForm">
+                <input type="hidden" id="articuloId">
+                <div class="form-group" id="codigoGroup" style="display:none;">
+                    <label for="codigo">Código del artículo</label>
+                    <input type="number" id="codigo" name="codigo" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre del artículo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Auriculares Bluetooth" required>
+                </div>
+                <div class="form-group">
+                    <label for="valor">Precio</label>
+                    <input type="number" id="valor" name="valor" step="1" min="1" placeholder="Ej: 25000" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar artículo</button>
+                    <button type="button" id="btnCancelar" class="btn btn-secondary" style="display:none;">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="list-section" aria-labelledby="listTitle">
+            <div class="list-header">
+                <h2 id="listTitle">Artículos publicados</h2>
+                <button id="btnRecargar" class="btn btn-link">Recargar lista</button>
+            </div>
+            <div id="mensaje" class="mensaje" role="status" aria-live="polite"></div>
+            <div id="listaArticulos" class="lista-articulos">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Cargando artículos…</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
