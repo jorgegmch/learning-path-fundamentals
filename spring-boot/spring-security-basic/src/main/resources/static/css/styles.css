@@ -1,0 +1,48 @@
+/* Estilo general */
+body {
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del login */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja de login */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Mejoras en inputs */
+.form-control {
+    border-radius: 10px;
+}
+
+/* Botón mejorado */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Efecto de hover */
+.btn-primary:hover {
+    background: linear-gradient(135deg, #6610f2, #007bff);
+}
+
+/* Mensaje de error */
+#error-message {
+    font-size: 14px;
+    font-weight: bold;
+}
