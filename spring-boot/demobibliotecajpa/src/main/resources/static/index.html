@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBLIOTECA::TERMINAL_v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <h1 class="glitch" data-text="TECNOLIBRO_OS">TECNOLIBRO_OS</h1>
+        <p class="subtitle">// SISTEMA DE GESTIÓN DE CATÁLOGO — CONEXIÓN: <span id="statusConexion">VERIFICANDO...</span></p>
+    </header>
+
+    <main class="container">
+
+        <section class="panel form-panel">
+            <h2 class="panel-title">&gt; <span id="formTitulo">NUEVO_REGISTRO</span></h2>
+
+            <form id="libroForm">
+                <input type="hidden" id="libroId">
+
+                <label for="titulo">TITULO</label>
+                <input type="text" id="titulo" required placeholder="EJ: FUNDACION">
+
+                <label for="autor">AUTOR</label>
+                <input type="text" id="autor" required placeholder="EJ: ISAAC ASIMOV">
+
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" required placeholder="EJ: 978-3-16-148410-0">
+
+                <label for="genero">GENERO</label>
+                <input type="text" id="genero" required placeholder="EJ: CIENCIA FICCION">
+
+                <label for="ejemplaresDisponibles">EJEMPLARES_DISPONIBLES</label>
+                <input type="number" id="ejemplaresDisponibles" required min="0" placeholder="0">
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">EJECUTAR::GUARDAR</button>
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">CANCELAR</button>
+                </div>
+            </form>
+
+            <div id="mensaje" class="mensaje"></div>
+        </section>
+
+        <section class="panel table-panel">
+            <h2 class="panel-title">&gt; CATALOGO_REGISTRADO <button id="refreshBtn" class="btn-icon" title="Recargar">⟳</button></h2>
+
+            <div class="table-wrapper">
+                <table id="tablaLibros">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITULO</th>
+                            <th>AUTOR</th>
+                            <th>ISBN</th>
+                            <th>GENERO</th>
+                            <th>DISP.</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaBody">
+                        <tr><td colspan="7" class="cargando">CARGANDO_DATOS...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>API_ENDPOINT: /api/libros — GRUPO_C4 // JORGE_GOMEZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
